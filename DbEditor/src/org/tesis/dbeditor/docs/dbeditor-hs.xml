@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE helpset PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp HelpSet Version 2.0//EN" "http://java.sun.com/products/javahelp/helpset_2_0.dtd">
+<helpset version="2.0">
+    <title>Ayuda de DB Editor</title>
+    <maps>
+        <homeID>org.tesis.dbeditor.about</homeID>
+        <mapref location="dbeditor-map.xml"/>
+    </maps>
+    <view mergetype="javax.help.AppendMerge">
+        <name>TOC</name>
+        <label>Tabla de Contenidos</label>
+        <type>javax.help.TOCView</type>
+        <data>dbeditor-toc.xml</data>
+    </view>
+    <view mergetype="javax.help.AppendMerge">
+        <name>Index</name>
+        <label>Indice</label>
+        <type>javax.help.IndexView</type>
+        <data>dbeditor-idx.xml</data>
+    </view>
+    <view>
+        <name>Search</name>
+        <label>Buscar</label>
+        <type>javax.help.SearchView</type>
+        <data engine="com.sun.java.help.search.DefaultSearchEngine">JavaHelpSearch</data>
+    </view>
+</helpset>

@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.tesis.mybaseapi
+OpenIDE-Module-Localizing-Bundle: org/tesis/mybaseapi/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

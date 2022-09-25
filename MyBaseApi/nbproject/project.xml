@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.apisupport.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/nb-module-project/3">
+            <code-name-base>org.tesis.mybaseapi</code-name-base>
+            <suite-component/>
+            <module-dependencies/>
+            <public-packages>
+                <package>org.tesis.changelog.property</package>
+                <package>org.tesis.changelog.tag</package>
+                <package>org.tesis.changelog.type</package>
+                <package>org.tesis.db</package>
+                <package>org.tesis.db.dbms</package>
+                <package>org.tesis.exception</package>
+                <package>org.tesis.jaxb</package>
+                <package>org.tesis.mybase</package>
+                <package>org.tesis.util</package>
+            </public-packages>
+            <class-path-extension>
+                <runtime-relative-path>ext/MyBaseAPI.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/MyBaseAPI.jar</binary-origin>
+            </class-path-extension>
+        </data>
+    </configuration>
+</project>

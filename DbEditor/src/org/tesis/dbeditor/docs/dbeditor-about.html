@@ -1,0 +1,357 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Editor de Base de Datos</title>
+        <link rel="stylesheet" href="mybase.css" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="title1">Editor de Base de Datos:</h2>
+            <h3 class="title2">Operaciones realizables sobre el ícono de la base de datos:</h3>
+            <p>
+                Dentro de MyBase son posible realizar cuatro operaciones sobre el ícono de la  base de datos: 
+                “Agregar tabla”, “Recargar Base de datos”, “Ver DDL” y “Operaciones realizadas-DB”.
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A10.png" alt="Menú  contextual - Base de Datos."/>
+            </div>
+            <br/>
+            <p>
+                La opción Agregar Tabla permite como su nombre lo dice agregar una nueva tabla a la base de datos, 
+                el funcionamiento y la manera en que realiza dicha operación se verá más adelante. 
+            </p>
+            <p>    
+                Recargar base de datos es la opción que permite actualizar la base de datos con los cambios realizados 
+                por otros usuarios sobre el Change-Log, esta opción es utilizada cuando se realiza un Update  del 
+                Change-Log; al hablar de Update se hace referencia al proceso de bajar los cambios realizados en el 
+                repositorio por otros usuarios. Al dar click en esta opción, la aplicación leerá  el nuevo Change-Log 
+                y aplicará inmediatamente los cambios realizados a la base de datos  por los demás.
+            </p>
+            <p>    
+                La opción Ver DLL (Lenguaje de definición de datos) permitirá ve la consulta SQL que generó la base de 
+                datos y por último la opción Operaciones realizadas – DB, permite ver todas las sentencias SQL 
+                ejecutadas sobre la base de datos.
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A11.png" alt="Creación de una tabla."/>
+            </div>
+            <br/>
+            <p>
+                Para realizar esta operación es necesario dar click secundario sobre el ícono de la base de datos, lo cual 
+                desplegara un menú como se muestra en la imagen de arriba. Al hacer click en este menú se creará una solapa 
+                en el Editor Panel, la  cual permitirá crear una nueva tabla. Esta solapa se describe a continuación:
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A12.png" alt="Agregar tabla, Panel editor."/>
+            </div>
+            <br/>
+            <p>
+                En la figura anterior se puede apreciar una tabla en proceso de creación, esto para ilustrar un poco 
+                mejor.
+            </p>
+            <p>    
+                El proceso para crear una nueva tabla es el siguiente; lo primero que se debe realizar es especificar el 
+                nombre de la tabla a crear, esto se realiza en el  campo de texto “Nombre de la tabla”, el siguiente paso 
+                es definir los campos con los cuales contara la tabla, para ello se cuenta con los componentes  “Nombre”, 
+                “Tipo”, “Longitud”, “PK” y “NULL”.
+            </p>
+            <p>    
+                El primer campo de texto sería el de Nombre,  lugar con donde se especifica el nombre del campo  a ser 
+                creado, el siguiente atributo que es necesario definir es el de Tipo, esto se realiza seleccionando un 
+                tipo de datos del combo tipo. Algo que hay que destacar es que los tipos de datos pueden variar de 
+                acuerdo al motor de base de datos con el cual se trabaje.
+            </p>
+            <p>    
+                El siguiente componente es el de Longitud, aquí se especifica la longitud que pueden llegar a tener los 
+                datos que acepte el campo de la tabla, esto en  el caso de datos del tipo String por ejemplo. El CheckBox 
+                PK es utilizado para especificar si un campo  es clave primaria, si  el mismo es seleccionado significa 
+                que el campo  que se creará es clave primaria de la tabla. Por último se  cuenta con el CheckBox “NULL”; 
+                él cual indica si un campo  puede o no ser nulo.
+            </p>
+            <p>    
+                Una vez que se hayan completado todos  los datos requeridos para crear un nuevo campo, se debe presionar 
+                el  botón con el símbolo “+”, esto hará que el  mismo sea agregado  a la lista de campos. En caso de que 
+                se quieran agregar más campos a la tabla  es necesario repetir  los pasos anteriores tantas veces como 
+                campos se quieran crear.
+            </p>
+            <p>    
+                En este punto de la creación de una tabla pueden ser eliminados campo de la misma, esto se realiza 
+                presionando el botón con el símbolo “–“. También es posible modificar un atributo ya creado, esto se 
+                realiza dando click  en el campo que se desea editar dentro de la lista de los ya creados. Con esta 
+                acción se cargarán los datos a los componentes nombre, tipo, etc. y se procede de la misma manera  
+                como cuando se crea un nuevo campo.
+            </p>
+            <p>    
+                En la parte inferior de la ventana, debajo de la grilla en la cual aparecen los campos  con los cuales 
+                contará la tabla, se puede apreciar un campo de texto con el título de “Nombre del PK de la nueva tabla”. 
+                En este campo de texto es necesario especificar el nombre que tendrá  la clave primaria dentro de la base 
+                de datos, en este caso  es posible apreciar que el nombre de la restricción es cliente_id. 
+            </p>
+            <p>    
+                Para finalizar la creación de la tabla  basta con hacer click en el botón Guardar, en caso  de que no se 
+                quiera  crear la tabla  basta con hacer click en el botón Reset  con lo cual se descartará todo lo que se 
+                haya cargado hasta ese momento.
+            </p>
+            <p>    
+                Una vez creada la tabla, la misma se agregá al DbExplorer como se puede ver a continuación. 
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A13.png" alt="Estructura del DbExplorer luego de la creación de una tabla."/>
+            </div>
+            <br/>
+
+            <h3 class="title2">Edición de una tabla:</h3>
+            <p>
+                En cuanto a la edición de una tabla, son posible realizar varias  operaciones básicas. La aplicación 
+                permite editar un campo ya existente. ¿Qué incluye esto? Cambiar el nombre, el tipo de datos, la 
+                longitud, si es o no clave primaria y  si puede o no ser nulo. Otra de la operación que es posible 
+                realizar es la de  eliminar y agregar nuevos campos  a la  tabla. A continuación se detallan como 
+                realizar dichas operaciones.
+            </p>
+            <p>    
+                La primera operación que se detallará es la de eliminar un atributo existente,  antes de explicar cómo 
+                se realiza esta operación es necesario explicar cómo acceder a la misma.
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A14.png" alt="Menú desplegable de opciones."/>
+            </div>
+            <br/>
+            <p>  
+                Para acceder a las operaciones que son posible realizar sobre una tabla basta con hacer click con el 
+                botón secundario sobre la tabla y esta acción despliega un menú como el que es posible apreciar en  la 
+                figura de arriba. Entre las operaciones que es posible realizar sobre las tablas se encuentran las 
+                siguientes: renombrar tabla, editar tabla, borrar tabla, agregar clave foráneas, ver el DDL(Lenguaje 
+                de definición de datos) de la tabla  y por supuesto la operación de crear tabla, la cual se vio más 
+                arriba. Hay que destacar que la opción de crear tabla no aparece en el menú que se indicó anteriormente, 
+                sino que es necesario realizar click con el botón secundario sobre el ícono de la base de datos para 
+                acceder a dicha opción.  
+            </p>
+            <p>     
+                Como ya se ha mencionado, la primera operación que se explica es la de eliminar un campo de la tabla. 
+                Para eliminar un campo lo único que se debe realizar es hacer un click en el botón menos, el cual se 
+                encuentra resaltado en la imagen de abajo. Para acceder a la ventana donde es posible realizar esta 
+                operación se debe seleccionar la opción Editar tabla del menú mencionado anteriormente. Al hacer click 
+                en este botón se eliminará la fila de la grilla a la  cual pertenece el botón, en caso de que  se haya 
+                cometido un error, basta con presionar el botón Reset para anular todos los cambios y volver al estado 
+                original de la  tabla. Una vez hechos los cambios es necesario presionar el botón Guardar para así 
+                aplicar las modificaciones realizadas.
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A15.png" alt="Eliminar campo."/>
+            </div>
+            <br/>
+            <p>     
+                Existe una manera diferente de eliminar el campo  de  una tabla; es posible realizar esta operación 
+                dando botón secundario sobre el campo a eliminar, dentro del explorer, y seleccionando la opción Borrar 
+                columna del menú desplegado.
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A16.png" alt="Eliminar una columna desde el DB Editor."/>
+            </div>
+            <br/>
+            <p>     
+                Una vez que se haya seleccionado la opción, la aplicación pedirá confirmación de si se desea o no 
+                eliminar la columna, en caso de que se presione el botón Borrar, la columna será eliminada,  si se 
+                presiona el botón Cancelar no se realizara ningún cambio.  
+            </p>
+            <p>     
+                La segunda operación que es posible realizar sobre un campo es la edición del mismo, para ello se debe 
+                seleccionar el campo a editar. Esto se realiza dando click sobre el mismo, con esta operación se cargará 
+                el nombre, el tipo de datos,  la longitud,  si es o no clave primaria y si puede ser o no nulo, como se 
+                puede observar  en la figura de abajo; esto siempre dentro de panel editor como se puede apreciar. Hay 
+                que recordar que siempre se está trabajando sobre la ventana que aparece al hacer click en la opción 
+                editar tabla del menú contextual explicado más arriba.
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A17.png" alt="Editar campo."/>
+            </div>
+            <br/>
+            <p>     
+                A partir de aquí se procede de igual manera que al crear un nuevo campo, es posible modificar el  nombre,
+                tipo de datos, longitud, etc.  Una vez realizados todos los cambios necesarios se debe presionar el botón 
+                con el símbolo “+” para que así el campo sea editado dentro de la lista de campos de  la tabla. En caso de 
+                ser necesario se repiten los pasos anteriores tantas veces como sea necesario. Una vez realizados todos 
+                los cambios deseados, para aplicar los mismos definitivamente a la base de datos, se debe  dar un click en 
+                el botón Guardar, lo que aplica todas las modificaciones.
+            </p>
+            <p>     
+                La última modificación que se puede realizar sobre una tabla es la de agregar nuevos campos a la misma. 
+                Para ello  es necesario acceder a la ventana de edición de la tabla y proceder de la misma manera como al 
+                crear una nueva tabla. Se especifican todos los datos del campo como el nombre, tipo, longitud , si es o 
+                no PK y si puede ser o no nulo el valor del campo, una vez rellenados todos los datos necesarios  se debe 
+                presionar el botón con el símbolo “+” para así agregar el  nuevo campo a la lista de campos de la tabla, 
+                este proceso  es necesario realizarlo tantas veces como  campos se quiera  agregar, una vez realizados 
+                todos  los cambios, se debe  dar un click en el botón Guardar, lo cual aplica todas las modificaciones.
+            </p> 
+
+            <h3 class="title2">Renombrar tabla:</h3>
+            <p> 
+                Otra de las ediciones que se puede realizar sobre una tabla es la de cambiar el nombre a la misma, 
+                para ello debemos  acceder a la ventana que nos permita realizar dicha modificación, la forma de acceder 
+                a esta ventana  es dando botón secundario sobre la tabla a editar y seleccionando la opción Renombrar 
+                tabla del menú desplegado, lo que hará que se visualice una ventana como la que se puede apreciar abajo. 
+            </p> 
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A18.png" alt="Renombrar una tabla."/>
+            </div>
+            <br/>
+            <p>
+                Una vez en esta ventana lo único que se debe realizar es especificar un nuevo nombre de la tabla dentro 
+                del campo de texto que aparece, y presionar el botón Renombrar para que las modificaciones sean aplicadas.
+            </p>
+            <h3 class="title2">Eliminar tabla:</h3>
+            <p>
+                Para eliminar una tabla lo único que se debe realizar es dar click con el botón secundario sobre la tabla 
+                a eliminar y seleccionar del menú la opción Borrar tabla, lo que hará que aparezca la siguiente ventana:
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A19.png" alt="Eliminar una tabla."/>
+            </div>
+            <br/>
+            <p>
+                En  esta nueva ventana aparecen dos opciones: la de Borrar  y la de Cancelar, para eliminar la tabla se 
+                debe  presionar el botón Borrar lo cual elimina al tabla de la base de datos, en caso de que no se quiera
+                eliminar la tabla se debe dar click en el botón Cancelar. 
+            </p>
+            <h3 class="title2">Agregar/Editar claves foráneas:</h3>
+            <p>    
+                Antes de explicar cómo agregar y editar claves Foráneas  de una tabla es  necesario explicar que es una 
+                clave foránea.
+            </p>
+            <p>    
+                En el contexto de las bases de datos relacionales, una clave foránea o clave ajena (Foreign Key) es una 
+                limitación referencial entre dos tablas. La clave foránea identifica una columna o grupo de columnas en 
+                una tabla (tabla hija) que se refiere a una columna o grupo de columnas en otra tabla (tabla maestra). 
+                Las columnas en la tabla referendo deben ser la clave primaria u otra clave candidata en la tabla 
+                referenciada.
+            </p>
+            <p>   
+                Una vez conocido qué es una clave foránea, desde ahora en adelante FK, es posible explicar cómo crear las 
+                mismas. 
+            </p>
+            <p>    
+                Lo primero que se debe realizar es dar botón secundario sobre la tabla a la cual queremos agregar la FK y 
+                seleccionar del menú desplegable la opción Agrega/Editar Clave Foránea  lo cual hará que se visualice la 
+                ventana que se muestra abajo.
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A20.png" alt="Agregar una Clave Foránea."/>
+            </div>
+            <br/>
+            <p>
+                Esta ventana tiene básicamente 3 partes, la primera, en la parte  superior es posible ver un cuadro de 
+                texto en el cual aparece el nombre de la tabla  a la cual se van a agregar FK o editar FK, es necesario 
+                destacar que esta ventana sirve tanto para agregar como para editar claves foráneas. 
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A21.png" alt="Partes de la ventana - Agregar FK."/>
+            </div>
+            <br/>
+            <p>
+                En la imagen de arriba se puede apreciar la parte interna de la ventana,  aquí es en donde se definen  la 
+                estructura de las  FK. A continuación se detalla la estructura de la ventana  y las funcionalidades de 
+                las mismas.
+            </p>
+            <p>    
+                En la imagen se puede apreciar que cada una de las partes de esta ventana está resaltada con un  número y 
+                un pequeño texto que indica en nombre o función de cada una de estas partes.
+            </p>
+            <p>    
+                Lo primero que se puede apreciar es  un campo de texto en el cual se especifica el nombre de la FK, cada 
+                una de las FK con la cuales cuenta una tabla requiere que la misma tenga un nombre y es en este campo de 
+                texto donde se especifica el mismo. 
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A22.png" alt="Selección de la columna FK."/>
+            </div>
+            <br/>
+            <p>
+                El segundo componente que se puede apreciar es  un combo “columna”, en este  combo se selecciona el campo 
+                de la tabla hija que hará referencia a la columna  de  la tabla padre, en otras palabras en campo que 
+                sería la FK de la tabla,  en este caso en la imagen se pueden apreciar las diferentes opciones  o los 
+                diferentes campos con los cuales cuenta la tabla ventas. Hay que destacar que aparecen los campos de la 
+                tabla ventas ya que es a esta tabla a la cual se quieren agregar las claves foráneas. 
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A23.png" alt="Selección de la tabla Padre - agregar FK."/>
+            </div>
+            <br/>
+            <p> 
+                En el siguiente combo que aparece se selecciona la tabla a la cual hace referencia el campo que se 
+                seleccionó arriba, sería la tabla maestra o tabla padre. En este caso se está creando una clave foránea 
+                donde el campo producto_id hace referencia al campo id de la tabla producto.
+            </p>
+            <p>     
+                El siguiente paso en la creación  de la FK es seleccionar el  campo al cual se quiere que haga referencia  la FK. Para ello es necesario seleccionar una opción del último combo, en el que aparecen los campos de la tabla maestra.
+            </p>
+            <p>     
+                Una vez que se hayan seleccionado todos los datos basta hacer click en el botón  Agregar para que  la 
+                clave foránea sea agregada. En caso de que se quieran agregar más  FK basta con repetir los pasos 
+                anteriores tantas veces como claves foráneas se necesite agregar. 
+            </p>
+            <p>    
+                Realizado todo lo anterior se podrá ver una ventana como la  de  más abajo. En este caso se utilizó como 
+                ejemplo una tabla ventas, la cual tiene dos FK la primera cliente_id y la segunda producto_id.
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A24.png" alt="Ventana de edición de una FK."/>
+            </div>
+            <br/>
+            <p> 
+                En caso de que se quiera editar  una FK  se debe realizar un click sobre la  FK dentro de la lista de 
+                claves foráneas que aparece a la derecha de la ventana, esta operación hará que los datos  de la FK se carguen en el lado izquierdo de la ventana; se cargará el nombre de la FK, el combo de columnas, de tablas  foráneas y de columnas foráneas. Esto da la posibilidad de editar los datos y volver a agregar la FK dando click en el botón agregar.
+            </p>
+            <p>    
+                Para eliminar una FK es necesario seleccionarla y dar click en el botón borrar que aparece en la parte 
+                inferior de la ventana.
+            </p>
+            <p>    
+                Para todas las operaciones anteriores, tanto para el crear,  el editar y el eliminar  FK es necesario 
+                presionar el botón guardar para aplicar los cambios a la base de datos. En caso de que se quieran 
+                descartar todos los cambios realizados en la ventana antes de presionar el botón guardar, basta con  
+                presionar el botón Reset para que  todo vuelva al estado en el que se encontraba al abrir la ventana.
+            </p> 
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A25.png" alt="Convención PK, FK."/>
+            </div>
+            <br/>
+            <p>
+                En la imagen de arriba se pueden apreciar las dos claves foráneas creadas en el proceso anterior. Es 
+                necesario explicar la convención utilizada dentro de MyBase para representar a las FK y las PK, las PK 
+                son representadas dentro de explorador con una llavecita de color  amarillo, y las FK con unas llavecitas 
+                de color gris.
+            </p>
+        </div>
+    </body>
+</html>
+<!--
+Tip: to create a link which will open in an external web browser, try:
+<object classid="java:org.netbeans.modules.javahelp.BrowserDisplayer">
+    <param name="content" value="http://www.netbeans.org/">
+    <param name="text" value="<html><u>http://www.netbeans.org/</u></html>">
+    <param name="textFontSize" value="medium">
+    <param name="textColor" value="blue">
+</object>
+To create a link to a help set from another module, you need to know the code name base and path, e.g.:
+<a href="nbdocs://org.netbeans.modules.usersguide/org/netbeans/modules/usersguide/configure/configure_options.html">Using the Options Window</a>
+(This link will behave sanely if that module is disabled or missing.)
+-->

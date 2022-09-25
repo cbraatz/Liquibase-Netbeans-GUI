@@ -1,0 +1,141 @@
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Creación de un nuevo proyecto</title>
+        <link rel="stylesheet" href="mybase.css" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="title1">Creación de un nuevo proyecto:</h2>
+            <br/><br/>
+            <div class="imgDiv">
+                <img src="img/A2.png" alt="Menú Crear Proyecto."/>
+            </div>
+            <br/>
+            <p>
+                Crear un proyecto nuevo es un procedimiento sumamente sencillo, el primer paso sería acceder 
+                al menú Archivo de la barra de menús y seleccionar la opción Crear proyecto, lo que hará que 
+                se visualice la siguiente ventana.
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A3.png" alt="Creación de un  Proyecto; Paso 1."/>
+            </div>
+            <br/>
+            <p>
+                Un proyecto puede ser creado con un Change-Log nuevo o a partir de uno ya existente, para ello 
+                esta ventana cuenta con dos selectores el primero “Nuevo Change-log” si esta opción está seleccionada, 
+                el proyecto se creará con un Change-Log nuevo. Se  deberá especificar el nombre y la dirección en la 
+                cual se creará el proyecto.   En cambio sí  selecciona la opción Change-Log existente solo se deberá 
+                especificar la dirección de donde se encuentre el mismo. En este caso la casilla para especificar el 
+                nombre del Change-Log se desactivará  ya que tomara el nombre del Change-Log que se especifique.
+            </p>
+            <p>
+                Además del archivo Change-Log, la aplicación cuenta con otro archivo; un archivo de 
+                configuración, en el cual se guardan ciertos datos de configuración del proyecto, 
+                como se puede apreciar en la figura.
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A4.png" alt="Archivo de configuración."/>
+            </div>
+            <br/>
+            <p>
+                Al crear un proyecto con un Change-Log existente, se puede dar el caso de que este archivo
+                de configuración exista o no, y dependiendo de esto la aplicación se comportará de manera 
+                diferente, luego de explicar cada uno de los datos que son necesarios definir para la creación
+                de un proyecto, se explicará la diferencia que existen al contar o no con este archivo. 
+            </p>
+            <p>
+                Como ya se mencionó, tanto al crear un proyecto con un Change-Log nuevo o uno ya existente 
+                es necesario especificar la ubicación del mismo, esta operación es realizada presionando en
+                el botón resaltado en la imagen.
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A5.png" alt="Selector de ubicación del Change-Log."/>
+            </div>
+            <br/>
+            <p>
+                Una vez especificada la ubicación y el nombre (si fuere necesario) del Change-Log, el siguiente
+                dato que se debe completar es “Proyecto”  en este campo se especifica el nombre que queramos que
+                tenga el proyecto a ser creado. El siguiente dato requerido es el de “Nombre DB”  en el cual se 
+                debe   especificar el nombre de la base de datos. Hay que destacar que la base de datos debe estar
+                creada antes de realizar este procedimiento. El ultimo campo que es necesario completar es “Autor”,
+                aquí se especifica el nombre del  autor del proyecto, este nombre aparece luego en el Change-Log y
+                puede ser utilizado, para dar  seguimiento a de quién ha realizado los cambios  a la estructura de 
+                la base de datos.
+            </p>
+            <p>
+                Una vez completados todos los datos es posible pasar a la siguiente ventana dando click en
+                el botón SIGUIENTE;  a continuación de muestra la siguiente ventana.
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A6.png" alt="Creación de un  Proyecto; Paso 2."/>
+            </div>
+            <br/>
+            <p>
+                En esta ventana son requeridos ya los datos necesarios para conectarse a la base de datos. El
+                primer campo que se observa es el de “DBMS”,   este es un combo en el cual se puede seleccionar
+                el motor con el cual se quiera trabajar. En este combo aparecen todos los motores soportados por
+                la aplicación.
+            </p>
+            <p>  	
+                Los campos siguientes  son el de “Host”  en el cual se especifica la dirección de la base de datos;
+                en este caso es “localhost”, pero esto dependerá de donde se encuentre la base de datos,  por ejemplo
+                si la misma se encuentra en otra pc remota,  el host seria la dirección IP de esa máquina. El tercer
+                campo sería el “Puerto”;  este es el puerto a través del cual nos conectamos a la base de datos, el
+                cuarto y quinto campo serían los de “Usuario” y  “Contraseña” estos dos campos son rellenados con el
+                usuario y contraseña que se tenga en el motor de base de datos. Una vez completados todos estos datos
+                es necesario comprobar que  se pueda realizar la conexión con la base de datos para ello se debe 
+                presionar el botón probar, en caso que la prueba sea exitosa  se verá un mensaje que lo indique, 
+                en caso contrario se verá  un mensaje que especifica  la naturaleza del error, y en ese caso se 
+                deberán realizar las correcciones para  solucionar el mismo. Si  la prueba es  exitosa se podrá 
+                crear el proyecto haciendo click en el botón TERMINAR.
+            </p>
+            <p>	
+                Como se ha mencionado en párrafos anteriores, un proyecto puede ser creado con un Change-Log 
+                existente o con  un nuevo Change-Log. En caso de que se cree un proyecto con  un Change-Log 
+                existente, se puede dar el caso de que se cuente  o no con el archivo de configuración. Si  
+                no se cuenta con el mismo, se deberán especificar todos los campo explicados  arriba y en caso
+                contrario solo será necesario especificar el  nombre del autor del proyecto dentro del campo 
+                autor;  los demás datos como: nombre de la base de datos, nombre del proyecto, url de la base
+                de datos, usuario, contraseña, etc., serán tomados desde el mismo. Hay que destacar que si los
+                datos que aparecen en el mismo no son aplicables a nuestra base de datos, los mismos pueden ser
+                modificados, para ello basta con modificar los datos en los campos pertinentes.
+            </p>
+            <p>
+                Para finalizar la creación del proyecto  es necesario dar click  en el botón terminar,  
+                lo cual creará el  proyecto y se visualizará la siguiente ventana.      
+            </p>
+            <br/>
+            <div class="imgDiv">
+                <img src="img/A7.png" alt="Ventana luego de la creación del proyecto."/>
+            </div>
+            <br/>
+            <p>
+                Al crear un nuevo proyecto lo único que se visualiza en la ventana es la base de datos 
+                dentro del Panel Explorer. En este punto la única operación que se puede realizar es 
+                la de crear una nueva tabla.
+            </p>
+        </div>
+    </body>
+</html>
+<!--
+Tip: to create a link which will open in an external web browser, try:
+<object classid="java:org.netbeans.modules.javahelp.BrowserDisplayer">
+    <param name="content" value="http://www.netbeans.org/">
+    <param name="text" value="<html><u>http://www.netbeans.org/</u></html>">
+    <param name="textFontSize" value="medium">
+    <param name="textColor" value="blue">
+</object>
+To create a link to a help set from another module, you need to know the code name base and path, e.g.:
+<a href="nbdocs://org.netbeans.modules.usersguide/org/netbeans/modules/usersguide/configure/configure_options.html">Using the Options Window</a>
+(This link will behave sanely if that module is disabled or missing.)
+-->
